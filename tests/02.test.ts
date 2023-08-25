@@ -9,7 +9,7 @@ describe("Test P02: Find Second-to-Last Element of a List", () => {
 		);
 	});
 
-	it("returns null or false for lists with one or fewer elements", () => {
+	it("returns null for lists with one or fewer elements", () => {
 		expect(findLastButOne([])).toBeNull();
 		expect(findLastButOne([42])).toBeNull();
 	});
