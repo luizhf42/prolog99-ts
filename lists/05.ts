@@ -1,5 +1,6 @@
-// P05 (*) Reverse a list.
+// * P05 (*) Reverse a list.
 
+// * O(1) space complexity; O(n) time complexity, but O(n/2) keeping constants
 const reverseArray = <T>(array: T[]) => {
   const length = array.length;
 	if (length <= 1) return array;
@@ -15,12 +16,16 @@ const reverseArray = <T>(array: T[]) => {
 	return array;
 };
 
-// Slower than the first one, also with O(n) space complexity
-// const reverseArray = <T>(array: T[]) => {
-// 	if (array.length <= 1) return array;
-// 	const reversedArray: T[] = [];
-// 	for (const el of array) reversedArray.unshift(el);
-// 	return reversedArray;
-// };
+/* 
+* O(n) space and time complexity
+* Didn't pass test 6 due to timeout
+
+ const reverseArray = <T>(array: T[]) => {
+ 	if (array.length <= 1) return array;
+ 	const reversedArray: T[] = [];
+ 	for (const el of array) reversedArray.unshift(el);
+ 	return reversedArray;
+ };
+*/
 
 export default reverseArray;
